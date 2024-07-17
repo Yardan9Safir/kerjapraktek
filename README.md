@@ -2,7 +2,7 @@
 
 ## Description
 
-Proyek Sistem Penilaian pada Siswa Pondok adalah sebuah aplikasi berbasis web yang digunakan untuk memasukkan nilai - nilai siswa.
+Proyek APLIKASI CV. OASISTECH INDOKARYA BERBASIS WEB MENGGUNAKAN FRAMEWORK LARAVEL DAN BOOTSTRAP 5
 
 tech stack : laravel + Bootstrap
 
@@ -77,11 +77,7 @@ npm run dev
 
 `{nama_kamu}_dev` misal nama saya safir maka branch yang akan saya push adalah safir_dev
 
-`frontend` merge dari divisi frontend dan berisi tampilan yang sudah di query dari backend
-
 `dev` berisi gabungan branch backend dan front end
-
-`backend` merge dari divisi backend dan hanya berisi query dari controller
 
 `main` branch yang sudah siap di deploy dan sudah di cock check tidak ada bug
 
