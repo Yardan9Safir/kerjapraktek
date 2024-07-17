@@ -87,17 +87,9 @@ npm run dev
 
 ## Pembagian Penugasan divisi
 
-### Front end
-
--   ryan
--   arum
--   Ridho
-
-### back end
-
--   ibrahim
--   safir
--   Ridho
+-   Yardan Safir
+-   Arisandi Nugroho
+-   Exacta Bunayya Aldero
 
 ## Proses Pengerjaan
 
