@@ -29,11 +29,11 @@
 
     <style>
         body {
-            font-family: 'Nunito', sans-serif;
+            font-family: Arial, Helvetica, sans-serif
         }
 
         .sidebar {
-            background-color: #4D44B5;
+            background-color: #37363d;
             min-height: 100vh;
             min-width: 40vh;
         }
@@ -46,11 +46,12 @@
             font-weight: 500;
         }
 
-        .sidebar a:hover, .sidebar a.active {
+        .sidebar a:hover,
+        .sidebar a.active {
             background-color: #F3F4FF;
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
-            color: #4D44B5;
+            color: #2d2c32;
         }
 
         .main-content {
@@ -102,49 +103,18 @@
     <div class="d-flex flex-column flex-lg-row">
         <div class="sidebar pt-3 ps-3 pb-3 d-flex flex-column">
             <div class="text-center mb-4 pe-3">
-                <img src="/path/to/logo.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
-                <h4 class="text-white">Ribath Daruttauhid</h4>
+                <h4 class="text-white">CV.OASISTECH INDOKARYA</h4>
             </div>
             <div class="d-flex flex-column">
-                <a href="{{route('home')}}" class="d-flex align-items-center {{ Request::is('home') ? 'active' : '' }}">
-                    <i class="bi bi-house icon-lg" style="margin-right: 15px; font-size:20px;"></i>
-                    <span>Dashboard</span>
+                <a href="{{ route('filterair.index') }}"
+                    class="d-flex align-items-center {{ Request::is('santri') ? 'active' : '' }}">
+                    <i class="bi bi bi-columns icon-md" style="margin-right: 15px; font-size:20px;"></i>
+                    Data Alat Pemfilteran Air
                 </a>
-                <a href="{{ route('santri.index') }}" class="d-flex align-items-center {{ Request::is('santri') ? 'active' : '' }}">
-                    <i class="bi bi-person-badge-fill icon-md" style="margin-right: 15px; font-size:20px;"></i>
-                    Santri
-                </a>
-                <a href="{{ route('mapel.index') }}" class="d-flex align-items-center {{ Request::is('mapel') ? 'active' : '' }}">
-                    <i class="bi bi-book icon-sm" style="margin-right: 15px; font-size:20px;"></i>
-                    Mata Pelajaran
-                </a>
-                {{-- <a href="#" class="d-flex align-items-center {{ Request::is('ekstrakurikuler') ? 'active' : '' }}">
-                    <i class="bi bi-emoji-smile" style="margin-right: 15px; font-size:20px;"></i>
-                    Ekstrakurikuler
-                </a> --}}
-                {{-- <a href="#" class="d-flex align-items-center {{ Request::is('kurikulum*') ? 'active' : '' }}">
-                    <i class="bi bi-card-checklist" style="margin-right: 15px; font-size:20px;"></i>
-                    Kurikulum
-                </a> --}}
-                <a href="#" class="d-flex align-items-center {{ Request::is('raport*') ? 'active' : '' }}">
-                    <i class="bi bi-file-earmark-text" style="margin-right: 15px; font-size:20px;"></i>
-                    Raport
-                </a>
-                {{-- <a href="#" class="d-flex align-items-center {{ Request::is('user*') ? 'active' : '' }}">
-                    <i class="bi bi-people" style="margin-right: 15px; font-size:20px;"></i>
-                    User
-                </a>
-                <a href="#" class="d-flex align-items-center {{ Request::is('chat*') ? 'active' : '' }}">
-                    <i class="bi bi-chat" style="margin-right: 15px; font-size:20px;"></i>
-                    Chat
-                </a>
-                <a href="#" class="d-flex align-items-center {{ Request::is('lastest-activity*') ? 'active' : '' }}">
-                    <i class="bi bi-clock-history" style="margin-right: 15px; font-size:20px;"></i>
-                    Latest Activity
-                </a> --}}
                 <a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
+                    <i class="bi bi-arrow-down-square" style="margin-right: 15px; font-size:20px;"></i>
                     {{ __('Logout') }}
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
