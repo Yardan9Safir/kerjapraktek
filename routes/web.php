@@ -13,11 +13,18 @@ Route::get('/test', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/dashboard', function(){
+Route::get('/dashboard', function () {
     return view('dashboard');
+});
+Route::get('/profile', function () {
+    return view('profile');
+});
+Route::get('/dashboard', function(){
+    return view('homepage');
 });
 
 Route::middleware('auth')->group(function () {
     Route::resource('santri', App\Http\Controllers\SantriController::class);
     Route::resource('mapel', App\Http\Controllers\MapelController::class);
+    Route::resource('filterair', App\Http\Controllers\FilterAirController::class);
 });
